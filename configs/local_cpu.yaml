@@ -1,0 +1,13 @@
+# Small settings for trying the pipeline on a laptop CPU with a local copy of the dataset.
+input_root: ./dataset              # folder that contains instances_val2019.json, val2019/, test2019/
+work_dir: ./outputs
+tmp_dir: ./outputs/tmp
+model: yolo11n.pt
+imgsz: 640
+epochs: 3
+batch: 4
+device: cpu
+workers: 2
+test_limit: 200
+cv_folds: 3
+cv_epochs: 2

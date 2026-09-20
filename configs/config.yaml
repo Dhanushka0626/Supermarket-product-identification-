@@ -1,0 +1,29 @@
+# Settings for every step of the pipeline. Override any value on the command line:
+#   python scripts/train.py --set epochs=10 batch=4
+
+# ---- locations (Kaggle defaults) ----
+input_root: /kaggle/input          # the RPC dataset is searched for below this folder
+work_dir: /kaggle/working          # kept as notebook output: weights, results, figures, outcomes
+tmp_dir: /tmp/rpc17                # rebuildable: YOLO symlinks and label files
+resume_from: null                  # output folder of a previous Kaggle session to continue from
+seed: 42
+
+# ---- data split ----
+holdout_frac: 0.10                 # val2019 images held out for validation / threshold tuning
+test_limit: null                   # null = all 24,000 test2019 images (e.g. 3000 for a quick run)
+
+# ---- model: Modules B + C ----
+model: yolo11m.pt                  # COCO-pretrained; alternatives: yolo11s.pt (faster), yolov8m.pt, yolo11l.pt
+imgsz: 1024
+epochs: 60
+batch: 8                           # lower to 4 on CUDA out-of-memory
+patience: 20                       # early stopping
+device: 0                          # 0 = first GPU, [0, 1] = both Kaggle T4s, cpu
+iou: 0.70                          # NMS IoU
+workers: 4
+
+# ---- Phase 5: cross-validation ----
+run_cv: true
+cv_folds: 5
+cv_epochs: 20                      # shorter than the final model to fit the GPU budget
+cv_folds_to_run: null              # null = all folds, e.g. [0, 1, 2]

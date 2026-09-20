@@ -1,0 +1,19 @@
+# Replace @member1-github / @member2-github with your GitHub user names.
+# GitHub then asks the owner to review every pull request that touches their files.
+*                                   @member1-github @member2-github
+/src/smartcheckout/config.py        Durangi25
+/src/smartcheckout/data/            Durangi25
+/src/smartcheckout/preprocessing.py Durangi25
+/src/smartcheckout/detection.py     Durangi25
+/src/smartcheckout/training.py      Durangi25
+/scripts/prepare_data.py            Durangi25
+/scripts/train.py                   Durangi25
+/src/smartcheckout/evaluation/      Dhanushka0626
+/src/smartcheckout/reporting/       Dhanushka0626
+/src/smartcheckout/export.py        Dhanushka0626
+/scripts/validate.py                Dhanushka0626
+/scripts/evaluate_test.py           Dhanushka0626
+/scripts/cross_validate.py          Dhanushka0626
+/scripts/build_outcomes.py          Dhanushka0626
+/scripts/export_model.py            Dhanushka0626
+/demo.py                            Dhanushka0626

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="230" viewBox="0 0 980 230" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="980" height="230" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <!-- input -->
+  <rect x="15" y="70" width="130" height="80" rx="10" fill="#f2f2f2" stroke="#999"/>
+  <text x="80" y="104" text-anchor="middle" font-size="15" font-weight="600" fill="#222">Basket image</text>
+  <text x="80" y="126" text-anchor="middle" font-size="12" fill="#555">photo / file / camera</text>
+
+  <!-- A -->
+  <rect x="180" y="55" width="190" height="110" rx="10" fill="#e8f0fb" stroke="#4C78A8" stroke-width="1.5"/>
+  <text x="275" y="82" text-anchor="middle" font-size="15" font-weight="600" fill="#1f3b63">Module A</text>
+  <text x="275" y="103" text-anchor="middle" font-size="12" fill="#333">Preprocessing</text>
+  <text x="275" y="124" text-anchor="middle" font-size="11" fill="#555">resize · median filter</text>
+  <text x="275" y="141" text-anchor="middle" font-size="11" fill="#555">CLAHE contrast</text>
+
+  <!-- B+C -->
+  <rect x="405" y="40" width="230" height="140" rx="10" fill="#e6f4f1" stroke="#3A9C8C" stroke-width="1.5"/>
+  <text x="520" y="68" text-anchor="middle" font-size="15" font-weight="600" fill="#1d5a50">Modules B + C</text>
+  <text x="520" y="90" text-anchor="middle" font-size="12" fill="#333">YOLO11-m (fine-tuned)</text>
+  <text x="520" y="114" text-anchor="middle" font-size="11" fill="#555">detect every product (box)</text>
+  <text x="520" y="132" text-anchor="middle" font-size="11" fill="#555">+ classify into 17 categories</text>
+  <text x="520" y="156" text-anchor="middle" font-size="11" fill="#555">tuned confidence threshold</text>
+
+  <!-- D -->
+  <rect x="670" y="55" width="190" height="110" rx="10" fill="#fdf0e6" stroke="#E08A3C" stroke-width="1.5"/>
+  <text x="765" y="82" text-anchor="middle" font-size="15" font-weight="600" fill="#7a4210">Module D</text>
+  <text x="765" y="103" text-anchor="middle" font-size="12" fill="#333">Statistics &amp; report</text>
+  <text x="765" y="124" text-anchor="middle" font-size="11" fill="#555">total · per category · %</text>
+  <text x="765" y="141" text-anchor="middle" font-size="11" fill="#555">charts · labelled image · CSV</text>
+
+  <!-- output -->
+  <rect x="885" y="80" width="80" height="60" rx="10" fill="#f2f2f2" stroke="#999"/>
+  <text x="925" y="115" text-anchor="middle" font-size="13" font-weight="600" fill="#222">Report</text>
+
+  <line x1="145" y1="110" x2="176" y2="110" stroke="#555" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="370" y1="110" x2="401" y2="110" stroke="#555" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="635" y1="110" x2="666" y2="110" stroke="#555" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="860" y1="110" x2="881" y2="110" stroke="#555" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <text x="275" y="205" text-anchor="middle" font-size="12" fill="#4C78A8">Member 1</text>
+  <text x="520" y="205" text-anchor="middle" font-size="12" fill="#3A9C8C">Member 1 (model) · Member 2 (evaluation)</text>
+  <text x="765" y="205" text-anchor="middle" font-size="12" fill="#E08A3C">Member 2</text>
+</svg>
