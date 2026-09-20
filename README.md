@@ -143,7 +143,7 @@ After training, copy the key numbers from `outcomes/outcomes_report.md` here:
 
 | Member | Responsibility |
 |---|---|
-| Member 1 — *name* | Data preparation, Module A (preprocessing), Modules B + C (YOLO model, training) |
-| Member 2 — *name* | Evaluation (validation, test, cross-validation), Module D (report), outcomes, export, demo |
+| Member 1 — *Dhanushka* | Data preparation, Module A (preprocessing), Modules B + C (YOLO model, training) |
+| Member 2 — *Durangi* | Evaluation (validation, test, cross-validation), Module D (report), outcomes, export, demo |
 
 See [WORK_DIVISION.md](WORK_DIVISION.md).
